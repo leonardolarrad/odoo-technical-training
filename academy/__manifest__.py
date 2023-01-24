@@ -2,7 +2,7 @@
 
 ## add manifest for Acadame module using Odoo
 {
-    'name': 'Academy',
+    'name': 'Academia DIMAC21',
     'summary': 'Módulo de academia para Odoo',
     'description': 'Módulo de academia para Odoo v16 ofrecido por Soluciones DIMAC21.',
     'version': '1.0',
