@@ -7,7 +7,7 @@
             <field name="description">Curso para iniciar con Odoo.</field>
             <field name="level">beginner</field>
         </record>
-        
+
         <record id="accounting" model="academy.course">
             <field name="name">Contabilidad</field>
             <field name="description">Curso de contabilidad Odoo localizada para Venezuela.</field>
@@ -21,3 +21,4 @@
         </record>
 
     </data>
+</odoo>
