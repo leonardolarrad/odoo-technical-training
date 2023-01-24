@@ -13,7 +13,9 @@
     'data': [        
     ],
     'demo': [
-        'demo/academy_demo.xml',
+        'demo/academy_demo.xml'
     ],
     'application': True,
+    'installable': True,
+    'auto_install': False,
 }
