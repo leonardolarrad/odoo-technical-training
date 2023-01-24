@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-## add manifest for Acadame module using Odoo
 {
     'name': 'Academia DIMAC21',
     'summary': 'Módulo de academia para Odoo',
@@ -14,7 +13,7 @@
     'data': [        
     ],
     'demo': [
-        
+        'demo/academy_demo.xml',
     ],
     'application': True,
 }
