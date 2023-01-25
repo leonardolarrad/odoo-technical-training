@@ -1,0 +1,4 @@
+odoo acces csv 
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+course_admin,Adminsitrador del curso,model_academy_course,group_academy_admin,1,1,1,1
+course_read_all,Leer todos los cursos,model_academy_course,,1,0,0,0
