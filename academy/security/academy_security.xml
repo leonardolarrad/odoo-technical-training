@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="academy_group_admin" model="res.groups">
+    <record id="group_academy_admin" model="res.groups">
         <field name="name">Administrador de la academia</field>
     </record>
 
