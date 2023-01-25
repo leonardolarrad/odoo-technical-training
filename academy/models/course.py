@@ -12,6 +12,6 @@ class Course(models.Model):
         ('beginner', 'Principiante'),
         ('intermediate', 'Intermedio'),
         ('advanced', 'Avanzado'),
-    ], copy=False)
+    ], string="Nivel", copy=False)
 
     active = fields.Boolean(string='Activo', default=True)
