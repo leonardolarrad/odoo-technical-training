@@ -10,7 +10,7 @@
     'author': 'Soluciones DIMAC21',
     'license': 'LGPL-3',
     'depends': ['base'],
-    'views': [        
+    'data': [        
         # security
         'security/academy_security.xml',
         'security/ir.model.access.csv',
