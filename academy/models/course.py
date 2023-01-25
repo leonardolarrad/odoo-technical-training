@@ -6,7 +6,7 @@ class Course(models.Model):
     _name = 'academy.course'
     _description = 'Cursos Académicos'
 
-    title = fields.Char(string="Título", required=True)
+    name = fields.Char(string="Título", required=True)
     description = fields.Text()
     level = fields.Selection([
         ('beginner', 'Principiante'),

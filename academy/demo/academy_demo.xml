@@ -3,19 +3,19 @@
     <data noupdate="1">
 
         <record id="odoo101" model="academy.course">
-            <field name="title">Primeros pasos con Odoo</field>
+            <field name="name">Primeros pasos con Odoo</field>
             <field name="description">Curso para iniciar con Odoo.</field>
             <field name="level">beginner</field>
         </record>
 
         <record id="accounting" model="academy.course">
-            <field name="title">Contabilidad</field>
+            <field name="name">Contabilidad</field>
             <field name="description">Curso de contabilidad Odoo localizada para Venezuela.</field>
             <field name="level">intermediate</field>
         </record>
 
         <record id="python" model="academy.course">
-            <field name="title">Curso de programación avanzada en Python</field>
+            <field name="name">Curso de programación avanzada en Python</field>
             <field name="description">Curso de programación avanzada en Python.</field>
             <field name="level">advanced</field>
         </record>
