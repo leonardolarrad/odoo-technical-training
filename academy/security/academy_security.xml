@@ -1,4 +1,3 @@
-add cadamy security odoo
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="academy_group_admin" model="res.groups">
