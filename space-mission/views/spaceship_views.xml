@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>      
+    <data>
+        <!-- Form view -->
+        <record id="spaceship_view_form" model="ir.ui.view">
+            <field name="name">space_mission.spaceship.form</field>
+            <field name="model">space_mission.spaceship</field>
+            <field name="arch" type="xml">
+                <form string="Spaceship Form">
+                    <sheet string="Spaceship">
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="crew_size"/>
+                                <field name="crew_capacity"/>
+                            </group>
+                            <group>
+                                <field name="fuel"/>
+                                <field name="fuel_capacity"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Descripción">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view -->
+        <record id="spaceship_view_tree" model="ir.ui.view">
+            <field name="name">space_mission.spaceship.tree</field>
+            <field name="model">space_mission.spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship Tree">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="crew_size"/>
+                    <field name="crew_capacity"/>
+                    <field name="fuel"/>
+                    <field name="fuel_capacity"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view -->
+        <record id="spaceship_view_search" model="ir.ui.view">
+            <field name="name">space_mission.spaceship.search</field>
+            <field name="model">space_mission.spaceship</field>
+            <field name="arch" type="xml">
+                <search string="Spaceship">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="crew_size"/>
+                    <field name="crew_capacity"/>
+                    <field name="fuel"/>
+                    <field name="fuel_capacity"/>
+                </search>
+            </field>
+        </record>
+
+    </data>    
+</odoo>
