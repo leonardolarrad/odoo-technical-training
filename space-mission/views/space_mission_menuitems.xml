@@ -7,7 +7,7 @@
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
-                    Click para crear una nueva nave espacial.
+                    No hay naves espaciales.
                 </p>
             </field>
         </record>

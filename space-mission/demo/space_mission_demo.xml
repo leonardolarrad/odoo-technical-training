@@ -5,7 +5,7 @@
         <record id="atlantis" model="space_mission.spaceship">
             <field name="name">Atlantis</field>
             <field name="description">
-                Atlantis es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Atlantis es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.
+            Atlantis es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Atlantis es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.
             </field>
             <field name="crew_size">small</field>
             <field name="crew_capacity">2</field>
@@ -16,7 +16,7 @@
         <record id="discovery" model="space_mission.spaceship">
             <field name="name">Discovery</field>
             <field name="description">
-                Discovery es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Discovery es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.
+            Discovery es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Discovery es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.
             </field>
             <field name="crew_size">large</field>
             <field name="crew_capacity">7</field>
@@ -27,8 +27,8 @@
         <record id="radiant_crypto" model="space_mission.spaceship">
             <field name="name">Radiant Crypto</field>
             <field name="description">
-                Nave espacial de CryptoBros y ToyoBobos para el programa 'Crypto Mining', 
-                que consiste en minar criptomonedas en el espacio y perder una cantidad astronica de plata.
+            Nave espacial de CryptoBros y ToyoBobos para el programa 'Crypto Mining', 
+            que consiste en minar criptomonedas en el espacio y perder una cantidad astronica de plata.
             </field>
             <field name="crew_size">large</field>
             <field name="crew_capacity">6</field>
