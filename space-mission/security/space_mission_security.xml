@@ -8,6 +8,9 @@
         <field name="name">Tripulante de la misión espacial</field>
     </record>
 
+    <!-- No está en uso, prefiero que todos los usuarios generales tengan acceso 
+        incluso si no pertenecen a un grupo (facilidad)
+    -->
     <record id="group_space_mission_user" model="res.groups">
         <field name="name">Usuario general de la misión espacial</field>
     </record>
