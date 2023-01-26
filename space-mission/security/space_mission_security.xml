@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="group_space_mission_commander" model="res.groups">
-        <field name="name">Comandante de la missión espacial</field>
+        <field name="name">Comandante de la misión espacial</field>
     </record>
 
     <record id="group_space_mission_crew" model="res.groups">
