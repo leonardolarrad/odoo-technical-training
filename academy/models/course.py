@@ -35,12 +35,10 @@ class Course(models.Model):
         for record in self:
             record.total_price = record.base_price + record.additional_fee
 
-    # @api.onchange('base_price', 'additional_fee')
-    # def _onchange_total_price(self):
-    #     if self.base_price < 0 or self.additional_fee < 0:
-    #         raise UserError("El precio base y la comisión adicional no pueden ser negativos.")
-
-    #     self.total_price = self.base_price + self.additional_fee
+    @api.onchange('base_price', 'additional_fee')
+    def _onchange_total_price(self):
+        if self.base_price < 0 or self.additional_fee < 0:
+            raise UserError("El precio base y la comisión adicional no pueden ser negativos.")
 
     @api.constrains('additional_fee')
     def _check_additional_fee(self):
