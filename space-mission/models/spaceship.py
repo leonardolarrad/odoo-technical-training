@@ -43,7 +43,7 @@ class Spaceship(models.Model):
         default=0.00
     )
 
-    @api.constraints('width', 'height')
+    @api.constrains('width', 'height')
     def _check_dimensions(self):
         for record in self:
             if record.width < 0 or record.height < 0:
