@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError, UserError
 
 class Spaceship(models.Model):
     _name = 'space_mission.spaceship'
