@@ -22,14 +22,25 @@ class Course(models.Model):
 
     base_price = fields.Float(string="Precio Base", default=0.00)
     additional_fee = fields.Float(string="Comisión Adicional", default=10.00)
-    total_price = fields.Float(string="Precio Total", readonly=True)
+    
+    total_price = fields.Float(
+        string="Precio Total", 
+        readonly=True, 
+        compute='_compute_total_price', 
+        store=True
+    )
+    
+    @api.depends('base_price', 'additional_fee')
+    def _compute_total_price(self):
+        for record in self:
+            record.total_price = record.base_price + record.additional_fee
 
-    @api.onchange('base_price', 'additional_fee')
-    def _onchange_total_price(self):
-        if self.base_price < 0 or self.additional_fee < 0:
-            raise UserError("El precio base y la comisión adicional no pueden ser negativos.")
+    # @api.onchange('base_price', 'additional_fee')
+    # def _onchange_total_price(self):
+    #     if self.base_price < 0 or self.additional_fee < 0:
+    #         raise UserError("El precio base y la comisión adicional no pueden ser negativos.")
 
-        self.total_price = self.base_price + self.additional_fee
+    #     self.total_price = self.base_price + self.additional_fee
 
     @api.constrains('additional_fee')
     def _check_additional_fee(self):
