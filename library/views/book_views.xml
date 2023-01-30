@@ -3,8 +3,8 @@
     <data>
         <!-- Form view -->
         <record id="book_view_form" model="ir.ui.view">
-            <field name="name">academy.book.form</field>
-            <field name="model">academy.book</field>
+            <field name="name">library.book.form</field>
+            <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <form string="Book Form">
                     <sheet string="Book">
@@ -31,8 +31,8 @@
 
         <!-- Tree view -->
         <record id="book_view_tree" model="ir.ui.view">
-            <field name="name">academy.book.tree</field>
-            <field name="model">academy.book</field>
+            <field name="name">library.book.tree</field>
+            <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <tree string="Book Tree">
                     <field name="name"/>
@@ -46,8 +46,8 @@
 
         <!-- Search view -->
         <record id="book_view_search" model="ir.ui.view">
-            <field name="name">academy.book.search</field>
-            <field name="model">academy.book</field>
+            <field name="name">library.book.search</field>
+            <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <search string="Book">
                     <field name="name"/>
