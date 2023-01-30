@@ -36,7 +36,6 @@
             <field name="arch" type="xml">
                 <tree string="Mission Tree">
                     <field name="name"/>
-                    <field name="spaceship_id"/>
                     <field name="commander_id"/>
                 </tree>
             </field>
