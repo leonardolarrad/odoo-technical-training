@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="book_list_action">
+            <field name="name">Libros</field>
+            <field name="res_model">library.book</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    No hay cursos publicados.
+                </p>
+            </field>
+        </record>
+
+        <menuitem 
+            id="menu_library" 
+            name="Biblioteca" 
+            sequence="1"
+        />
+
+        <menuitem 
+            id="menu_library_sub" 
+            name="Biblioteca" 
+            parent="menu_library" 
+            sequence="2"
+        />
+
+        <menuitem 
+            id="menu_library_books" 
+            name="Libros" 
+            parent="menu_library_sub" 
+            action="book_list_action" 
+            sequence="3"
+        />                
+    </data>
+</odoo>
