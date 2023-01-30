@@ -8,15 +8,15 @@
             <field name="arch" type="xml">
                 <form string="Course Form">
                     <sheet string="Course">
-                        <h1><field name="name"/></h1>
+                        <h1><field name="name" placeholder="ej. Curso de Programación"/></h1>
                         <group>
                             <group>
                                 <field name="active"/>
-                                <field name="level"/>
+                                <field name="level" placeholder="nivel de dificultad"/>
                             </group>
                             <group>
-                                <field name="base_price"/>
-                                <field name="additional_fee"/>
+                                <field name="base_price" placeholder="precio base del curso"/>
+                                <field name="additional_fee" placeholder="comisión adicional"/>
                                 <field name="total_price" force_save="1"/>
                             </group> 
                         </group>
