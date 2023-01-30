@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!-- Course Action -->
+
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Cursos</field>
             <field name="res_model">academy.course</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    Click para crear un nuevo curso.
+                <p class="o_view_nocontent_smiling_face">
+                    No hay cursos publicados.
                 </p>
             </field>
         </record>
+
+        <!-- Session Action -->
+
+        <record model="ir.actions.act_window" id="session_list_action">
+            <field name="name">Sesiones</field>
+            <field name="res_model">academy.session</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No hay sesiones publicadas.
+                </p>
+            </field>
+        </record>
+
+        <!-- Menu Items -->
 
         <menuitem 
             id="menu_academy" 
@@ -31,6 +48,14 @@
             parent="menu_academy_sub" 
             action="course_list_action" 
             sequence="3"
-        />                
+        /> 
+
+        <menuitem 
+            id="menu_academy_sessions" 
+            name="Sesiones" 
+            parent="menu_academy_sub" 
+            action="session_list_action" 
+            sequence="4"
+        />        
     </data>
 </odoo>

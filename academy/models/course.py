@@ -29,6 +29,12 @@ class Course(models.Model):
         compute='_compute_total_price', 
         store=True
     )
+
+    session_ids = fields.One2many(
+        comodel_name='academy.session',
+        inverse_name='course_id',
+        string='Sesiones'
+    )
     
     @api.depends('base_price', 'additional_fee')
     def _compute_total_price(self):
