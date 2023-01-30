@@ -6,8 +6,8 @@
             <field name="res_model">library.book</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    No hay cursos publicados.
+                <p class="o_view_nocontent_smiling_face">
+                    No hay libros disponibles
                 </p>
             </field>
         </record>

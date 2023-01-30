@@ -2,22 +2,67 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="odoo101" model="academy.course">
-            <field name="name">Primeros pasos con Odoo</field>
-            <field name="description">Curso para iniciar con Odoo.</field>
-            <field name="level">beginner</field>
+        <record id="book1" model="library.book">
+            <field name="name">Crónicas de una muerte anunciada</field>
+            <field name="description">Crónicas de una muerte anunciada es una novela del escritor colombiano Gabriel García Márquez, publicada en 1981. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">978-84-376-0494-1</field>
+            <field name="release_date">1981-01-01</field>
+            <field name="author">Gabriel García Márquez</field>
+            <field name="genre">novel</field>
         </record>
 
-        <record id="accounting" model="academy.course">
-            <field name="name">Contabilidad</field>
-            <field name="description">Curso de contabilidad Odoo localizada para Venezuela.</field>
-            <field name="level">intermediate</field>
+        <record id="book2" model="library.book">
+            <field name="name">El coronel no tiene quien le escriba</field>
+            <field name="description">El coronel no tiene quien le escriba es una novela del escritor colombiano Gabriel García Márquez, publicada en 1961. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">978-84-376-0494-2</field>
+            <field name="release_date">1961-01-01</field>
+            <field name="author">Gabriel García Márquez</field>
+            <field name="genre">novel</field>
         </record>
 
-        <record id="python" model="academy.course">
-            <field name="name">Curso de programación avanzada en Python</field>
-            <field name="description">Curso de programación avanzada en Python.</field>
-            <field name="level">advanced</field>
+        <record id="book3" model="library.book">
+            <field name="name">Cien años de soledad</field>
+            <field name="description">Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez, publicada en 1967. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">978-84-376-0494-3</field>
+            <field name="release_date">1967-01-01</field>
+            <field name="author">Gabriel García Márquez</field>
+            <field name="genre">novel</field>
+        </record>
+
+        <record id="book4" model="library.book">
+            <field name="name">El señor de los anillos</field>
+            <field name="description">El señor de los anillos es una novela del escritor colombiano Gabriel García Márquez, publicada en 1967. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">810-90-310-0413-2</field>
+            <field name="release_date">1967-01-01</field>
+            <field name="author">J.R.R. Tolkien</field>
+            <field name="genre">fantasy</field>
+        </record>
+
+        <record id="book5" model="library.book">
+            <field name="name">El principito</field>
+            <field name="description">El principito es una novela del escritor colombiano Gabriel García Márquez, publicada en 1967. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">923-44-346-4494-3</field>
+            <field name="release_date">1967-01-01</field>
+            <field name="author">Antoine de Saint-Exupéry</field>
+            <field name="genre">novel</field>
+        </record>
+
+        <record id="book6" model="library.book">
+            <field name="name">El caballero de la armadura oxidada</field>
+            <field name="description">El caballero de la armadura oxidada es una novela del escritor colombiano Gabriel García Márquez, publicada en 1967. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">913-41-346-4194-1</field>
+            <field name="release_date">1967-01-01</field>
+            <field name="author">Robert Fisher</field>
+            <field name="genre">fantasy</field>
+        </record>
+
+        <record id="book7" model="library.book">
+            <field name="name">PHP y MySQL</field>
+            <field name="description">PHP y MySQL es una novela del escritor colombiano Gabriel García Márquez, publicada en 1967. La novela narra la historia de un asesinato anunciado, que se desarrolla en la ciudad ficticia de Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia. La novela se desarrolla en un pueblo ficticio llamado Macondo, en el departamento de Aracataca, en el Magdalena Medio, en Colombia.</field>
+            <field name="isbn">888-41-888-4194-8</field>
+            <field name="release_date">1967-01-01</field>
+            <field name="author">Robert Fisher</field>
+            <field name="genre">science</field>
         </record>
 
     </data>

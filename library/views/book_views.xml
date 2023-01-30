@@ -11,10 +11,12 @@
                         <h1><field name="name"/></h1>
                         <group>
                             <group>
-                                <field name="active"/>
+                                <field name="isbn"/>
+                                <field name="release_date"/>
                             </group>
                             <group>
-                                <field name="level"/>
+                                <field name="author"/>
+                                <field name="genre"/>
                             </group>
                         </group>
                         <notebook>
@@ -35,7 +37,10 @@
                 <tree string="Course Tree">
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="level"/>
+                    <field name="isbn"/>
+                    <field name="release_date"/>
+                    <field name="author"/>
+                    <field name="genre"/>
                 </tree>
             </field>
         </record>
@@ -48,7 +53,10 @@
                 <search string="Course">
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="level"/>
+                    <field name="isbn"/>
+                    <field name="release_date"/>
+                    <field name="author"/>
+                    <field name="genre"/>
                 </search>
             </field>
         </record>
