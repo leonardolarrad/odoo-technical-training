@@ -44,6 +44,12 @@ class Spaceship(models.Model):
         default=0.00
     )
 
+    mission_ids = fields.One2many(
+        comodel_name='space_mission.mission',
+        inverse_name='spaceship_id',
+        string="Misiones"
+    )
+
     @api.constrains('width', 'height')
     def _check_dimensions(self):
         for record in self:

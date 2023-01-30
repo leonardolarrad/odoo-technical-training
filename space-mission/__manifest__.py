@@ -17,6 +17,7 @@
         # views
         'views/space_mission_menuitems.xml',
         'views/spaceship_views.xml',
+        'views/mission_views.xml',
     ],
     'demo': [
         'demo/space_mission_demo.xml'
