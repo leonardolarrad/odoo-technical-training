@@ -59,5 +59,7 @@
             </field>
         </record>
 
+        <!-- Rebuild -->
+
     </data>    
 </odoo>
