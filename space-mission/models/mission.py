@@ -26,7 +26,15 @@ class Mission(models.Model):
     launch_date = fields.Date(string="Fecha de lanzamiento", required=True)
     arrival_date = fields.Date(string="Fecha de llegada", required=True)
 
+    fuel_consumption = fields.Float(
+        string="Consumo de combustible"
+    )
+
+    cost = fields.Monetary(string="Costo", default=0.00)
+
     crew_ids = fields.Many2many(
         comodel_name='res.partner',
         string="Tripulación",
     )
+
+    
