@@ -31,6 +31,11 @@ class Mission(models.Model):
     )
 
     cost = fields.Monetary(string="Costo", default=0.00)
+    currency_id = fields.Many2one(
+        comodel_name='res.currency',
+        string="Moneda",
+        default=lambda self: self.env.user.company_id.currency_id.id
+    )
 
     crew_ids = fields.Many2many(
         comodel_name='res.partner',
