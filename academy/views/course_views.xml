@@ -59,7 +59,21 @@
             </field>
         </record>
 
-        <!-- Rebuild -->
+        <!-- Pivot View -->
+        <record id="course_view_pivot" model="ir.ui.view">
+            <field name="name">academy.course.pivot</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <pivot string="Course Pivot">
+                    <field name="name" type="row"/>
+                    <field name="description" type="row"/>
+                    <field name="level" type="row"/>
+                    <field name="base_price" type="measure"/>
+                    <field name="additional_fee" type="measure"/>
+                    <field name="total_price" type="measure"/>
+                </pivot>
+            </field>
+        </record>
 
     </data>    
 </odoo>

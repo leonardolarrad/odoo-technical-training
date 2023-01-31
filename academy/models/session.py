@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from datetime import timedelta
 
 class Session(models.Model):
     _name = 'academy.session'
@@ -28,3 +29,37 @@ class Session(models.Model):
         comodel_name='res.partner',
         string='Estudiantes'
     )
+
+    start_date = fields.Date(
+        string='Fecha de Inicio'
+    )
+
+    duration = fields.Integer(
+        string='Días de sesión', 
+        default=1
+    )
+
+    end_date = fields.Date(
+        string='Fecha de Finalización', 
+        compute='_compute_end_date',
+        inverse='_inverse_end_date',
+        store=True
+    )
+
+    @api.depends('start_date', 'duration')
+    def _compute_end_date(self):
+        for record in self:
+            if not (record.start_date and record.duration):
+                record.end_date = record.start_date
+            else:
+                duration = timedelta(days=record.duration)
+                record.end_date = record.start_date + duration
+            
+
+    def _inverse_end_date(self):
+        for record in self:
+            if record.start_date and record.end_date:
+                record.duration = (record.end_date - record.start_date).days
+
+    
+
