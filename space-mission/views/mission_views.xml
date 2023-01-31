@@ -19,6 +19,7 @@
                                 <field name="arrival_date"/>
                                 <field name="fuel_consumption"/>
                                 <field name="cost"/>
+                                <field name="currency_id" invisible="1"/>
                             </group>
                         </group>
                         <notebook>
