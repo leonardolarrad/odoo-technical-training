@@ -85,6 +85,7 @@
                     <field name="commander_id"/>
                 </calendar>
             </field>
+        </record>
 
     </data>    
 </odoo>
