@@ -6,8 +6,6 @@ from datetime import timedelta
 class Session(models.Model):
     _name = 'academy.session'
     _description = 'Academy Session'
-
-    name = fields.Char(string='Name', required=True)
     
     course_id = fields.Many2one(
         comodel_name='academy.course', 
@@ -60,6 +58,3 @@ class Session(models.Model):
         for record in self:
             if record.start_date and record.end_date:
                 record.duration = (record.end_date - record.start_date).days
-
-    
-
