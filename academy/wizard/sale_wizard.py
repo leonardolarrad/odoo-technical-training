@@ -6,6 +6,9 @@ class SaleWizard(models.TransientModel):
     _name = 'academy.sale.wizard'
     _description = 'Asistente: cotización rápida de sesión'
     
+    def _default_session(self):
+        return self.env['academy.session'].browse(self._context.get('active_id'))
+
     session_id = fields.Many2one(
         comodel_name='academy.session',
         string='Sesión',
@@ -24,8 +27,7 @@ class SaleWizard(models.TransientModel):
         string='Estudiantes a cotizar'
     )
 
-    def _default_session(self):
-        return self.env['academy.session'].browse(self._context.get('active_id'))
+
 
     def create_sale_order(self):
         session_product_id = self.env['product.template'].search([('is_session_product', '=', True)], limit=1)
