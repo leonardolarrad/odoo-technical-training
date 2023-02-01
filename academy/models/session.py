@@ -34,7 +34,7 @@ class Session(models.Model):
 
     duration = fields.Integer(
         string='Días de sesión', 
-        default=1
+        default=1.00
     )
 
     end_date = fields.Date(
@@ -58,3 +58,5 @@ class Session(models.Model):
         for record in self:
             if record.start_date and record.end_date:
                 record.duration = (record.end_date - record.start_date).days
+            else:
+                continue

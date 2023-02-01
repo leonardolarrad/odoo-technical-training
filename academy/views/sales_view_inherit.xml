@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="view_order_form_inherit_academy">
+        <record id="view_order_form_inherit_academy" model="ir.ui.view">
             <field name="name">sale.order.form.inherit.academy</field>
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
@@ -10,14 +10,20 @@
                     <field name="session_id"/>
                 </xpath>
                 <field name="partner_id" position="before">
-                    <field name="instructor_id" attrs="{'invisible':[('session_id','=', False)]}"/>
+                    <field 
+                        name="instructor_id" 
+                        attrs="{ 'invisible': [('session_id', '=', False)] }"
+                    />
                 </field>
-                <xpath expr="//sheet//notebook" position="inside">
-                    <page string="students" attrs="{'invisible':[('session_id','=', False)]}">
-                        <field name="student_ids">
+                <xpath expr="//sheet/notebook" position="inside">
+                    <page 
+                        name="Estudiantes" 
+                        attrs="{ 'invisible': [('session_id', '=', False)] }"
+                    >
+                        <field name="students_id">
                             <tree>
                                 <field name="name"/>
-                                <field name="phone"/>
+                                <field name="email"/>
                             </tree>
                         </field>
                     </page>
