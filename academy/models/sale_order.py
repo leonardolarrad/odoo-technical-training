@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class SaleOrder(models.Model):
+class SalesOrder(models.Model):
     _inherit = 'sale.order'
 
     session_id = fields.Many2one(
