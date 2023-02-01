@@ -6,7 +6,7 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     session_id = fields.Many2one(
-        'academy.session', 
+        comodel_name='academy.session', 
         string='Session', 
         ondelete='set null')
 
