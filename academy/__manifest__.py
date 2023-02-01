@@ -9,7 +9,7 @@
     'website': 'https://www.dimac21.com',
     'author': 'Soluciones DIMAC21',
     'license': 'LGPL-3',
-    'depends': ['base'],
+    'depends': ['sales'],
     'data': [        
         # security
         'security/academy_security.xml',
@@ -18,6 +18,8 @@
         'views/academy_menuitems.xml',
         'views/course_views.xml',
         'views/session_views.xml',
+        # inherited views
+        'views/sale_order_views.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'
