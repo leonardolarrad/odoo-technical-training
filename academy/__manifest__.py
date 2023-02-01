@@ -19,7 +19,7 @@
         'views/course_views.xml',
         'views/session_views.xml',
         # inherited views
-        'views/sale_order_views.xml',
+        'views/sales_view_inherit.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'
