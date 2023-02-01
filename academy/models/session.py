@@ -44,6 +44,11 @@ class Session(models.Model):
         store=True
     )
 
+    total_price = fields.Float(
+        string="Precio Total",
+        related='course_id.total_price'
+    )
+
     @api.depends('start_date', 'duration')
     def _compute_end_date(self):
         for record in self:

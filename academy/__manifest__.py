@@ -20,8 +20,9 @@
         'views/session_views.xml',
         # inherited views
         'views/sales_view_inherit.xml',
+        'views/product_views_inherit.xml',
         # wizards
-        'views/product_views_inherit.xml'
+        'wizard/sale_wizard_view.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'
