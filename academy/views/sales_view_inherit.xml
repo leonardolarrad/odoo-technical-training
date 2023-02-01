@@ -20,7 +20,7 @@
                         name="Estudiantes" 
                         attrs="{ 'invisible': [('session_id', '=', False)] }"
                     >
-                        <field name="students_id">
+                        <field name="student_ids">
                             <tree>
                                 <field name="name"/>
                                 <field name="email"/>
