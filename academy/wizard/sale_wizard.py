@@ -27,10 +27,9 @@ class SaleWizard(models.TransientModel):
         string='Estudiantes a cotizar'
     )
 
-
-
-    def create_sale_order(self):
-        session_product_id = self.env['product.template'].search([('is_session_product', '=', True)], limit=1)
+    def create_sale_orders(self):
+        session_product_id = self.env['product.template'].search(
+            [('is_session_product', '=', True)], limit=1)
 
         if session_product_id:
             for student in self.student_ids:
@@ -42,5 +41,6 @@ class SaleWizard(models.TransientModel):
                         'price_unit': self.session_id.total_price
                     })]
                 })
+
 
     
