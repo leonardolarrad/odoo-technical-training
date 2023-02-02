@@ -33,6 +33,7 @@
             id="menu_academy" 
             name="Academia" 
             sequence="1"
+            web_icon="academy,static/description/icon.png"
         />
 
         <menuitem 
