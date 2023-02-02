@@ -22,7 +22,6 @@
                             type="object" 
                             class="oe_highlight"
                         />
-                        or
                         <button 
                             string="Cancel" 
                             special="cancel"
