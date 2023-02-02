@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo> 
-    <report 
-        id="session_report" 
-        model="academy.session" 
-        string="Reporte de sesión"
-        name="academy.report_session_document"
-        file="academy.report_session"
-        report_type="qweb/html"/>
+    
+    <record id="session_report" model="ir.actions.report">
+        <field name="name">Reporte de sesión</field>
+        <field name="model">academy.session</field>
+        <field name="report_name">academy.report_session_document</field>
+        <field name="report_file">academy.report_session</field>
+        <field name="report_type">qweb-html</field>
+        <field name="binding_model_id" ref="academy.model_academy_session"/>
+        <field name="binding_type">report</field>
+    </record>
     
     <template id="report_session_document">
         <t t-call="web.html_container">
@@ -57,9 +60,5 @@
                 </t>
             </t>
         </t>
-
-
     </template>
-
-
 </odoo>
