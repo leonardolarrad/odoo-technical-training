@@ -29,6 +29,7 @@
     'demo': [
         'demo/academy_demo.xml'
     ],
+    'assets': {},
     'application': True,
     'installable': True,
     'auto_install': False,

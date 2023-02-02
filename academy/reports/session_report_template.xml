@@ -31,7 +31,7 @@
                             </div>
 
                             <!-- instructor -->
-                            <div t-if="doc.instructor">
+                            <div t-if="doc.instructor_id">
                                 <strong>Instructor:</strong>
                                 <span t-field="doc.instructor_id.name"/>
                             </div>
