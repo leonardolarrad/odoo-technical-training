@@ -23,6 +23,8 @@
         'views/product_views_inherit.xml',
         # wizards
         'wizard/sale_wizard_view.xml',
+        # reports
+        'reports/session_report_template.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'

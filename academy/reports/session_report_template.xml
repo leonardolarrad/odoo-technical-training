@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo> 
+    <report 
+        id="session_report" 
+        model="academy.session" 
+        string="Reporte de sesión"
+        name="academy.report_session_document"
+        file="academy.report_session"
+        report_type="qweb/html"/>
+    
+    <template id="report_session_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16"/>
+                        <!-- row 1 -->
+                        <div class="row mt32 mb32" id="session_info">
+                            <div class="col-auto mw-100 mb-2">
+                                <strong>Duración de la sesión:</strong>
+                                <t t-if="doc.start_date">
+                                    <span t-field="doc.start_date"/>
+                                </t>
+                                <t t-if="doc.end_date">
+                                    hasta
+                                    <span t-field="doc.end_date"/>
+                                </t>  
+                            </div>
+
+                            <!-- instructor -->
+                            <div t-if="doc.instructor">
+                                <strong>Instructor:</strong>
+                                <span t-field="doc.instructor_id.name"/>
+                            </div>
+                        </div> 
+                        <!-- row 2 -->
+                        <h4>Estudiantes</h4>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th name="th_name">Nombre</th>
+                                    <th name="th_phone">Télefono</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc.student_ids" t-as="student">
+                                    <td name="td_name" t-if="student.name">
+                                        <span t-field="student.name"/>
+                                    </td>
+                                    <td name="td_phone" t-if="student.phone">
+                                        <span t-field="student.phone"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+
+
+    </template>
+
+
+</odoo>
