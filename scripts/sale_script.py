@@ -22,3 +22,20 @@ model_access = models.execute_kw(
     ['write'], {'raise_exception': False})
 
 print('sale.order access:', model_access)
+
+draft_quotes = models.execute_kw(
+    db, uid, password,
+    'sale.order', 'search',
+    [[['state', '=', 'draft']]])
+
+print('draft quotes:', draft_quotes)
+
+# call a method
+
+if_confirmed = models.execute_kw(
+    db, uid, password,
+    'sale.order', 'action_confirm',
+    [draft_quotes]
+)
+
+print('confirmed:', if_confirmed)
