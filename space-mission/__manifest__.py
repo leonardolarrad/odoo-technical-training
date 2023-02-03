@@ -22,7 +22,7 @@
     'demo': [
         'demo/space_mission_demo.xml'
     ],
-    'application': True,
     'installable': True,
+    'application': True,
     'auto_install': False,
 }
