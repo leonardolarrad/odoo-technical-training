@@ -26,7 +26,7 @@
         # reports
         'reports/session_report_template.xml',
         # web templates
-        'view/academy_web_templates.xml',
+        'views/academy_web_templates.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'
