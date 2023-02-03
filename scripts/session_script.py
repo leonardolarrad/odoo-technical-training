@@ -35,5 +35,4 @@ course = models.execute_kw(
     'academy.course', 'search',
     [[['name', '=', 'Contabilidad']]])
 
-
 print('course:', course)
