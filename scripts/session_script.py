@@ -36,3 +36,10 @@ course = models.execute_kw(
     [[['name', '=', 'Contabilidad']]])
 
 print('course:', course)
+
+session_fields = models.execute_kw(
+    db, uid, password,
+    'academy.session', 'fields_get',
+    [], {'attributes': ['string', 'type', 'required']})
+
+print('session fields:', session_fields)
