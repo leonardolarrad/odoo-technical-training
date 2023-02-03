@@ -22,3 +22,18 @@ model_access = models.execute_kw(
     ['write'], {'raise_exception': False})
 
 print('academy.session access:', model_access)
+
+courses = models.execute_kw(
+    db, uid, password,
+    'academy.course', 'search_read',
+    [[['level', '=', ['intermediate', 'beginner']]]])
+
+print('courses:', courses)
+
+course = models.execute_kw(
+    db, uid, password,
+    'academy.course', 'search',
+    [[['name', '=', 'Contabilidad']]])
+
+
+print('course:', course)
