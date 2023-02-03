@@ -2,54 +2,48 @@
 <odoo>
     <data>
         <record model="ir.actions.act_window" id="spaceship_list_action">
-            <field name="name">Naves espaciales</field>
+            <field name="name">Spaceships</field>
             <field name="res_model">space_mission.spaceship</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
-                    No hay naves espaciales disponibles
+                    No spaceships available
                 </p>
             </field>
         </record>
 
         <record model="ir.actions.act_window" id="mission_list_action">
-            <field name="name">Misiones espaciales</field>
+            <field name="name">Space Missions</field>
             <field name="res_model">space_mission.mission</field>
             <field name="view_mode">tree,form,graph,calendar</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
-                    No hay misiones espaciales
+                    No missions available
                 </p>
             </field>
         </record>
 
         <menuitem 
             id="menu_space_mission" 
-            name="Misión Espacial" 
+            name="Space Mission"
             sequence="1"
-        />
-
-        <menuitem 
-            id="menu_space_mission_sub" 
-            name="Misión Espacial" 
-            parent="menu_space_mission" 
-            sequence="2"
+            web_icon="space_mission,static/description/icon.png"
         />
 
         <menuitem 
             id="menu_space_mission_spaceship" 
-            name="Naves espaciales" 
-            parent="menu_space_mission_sub" 
+            name="Spaceships" 
+            parent="menu_space_mission" 
             action="spaceship_list_action" 
-            sequence="3"
+            sequence="2"
         />                
 
         <menuitem 
             id="menu_space_mission_mission" 
-            name="Misiones espaciales" 
-            parent="menu_space_mission_sub" 
+            name="Missions" 
+            parent="menu_space_mission" 
             action="mission_list_action" 
-            sequence="4"
+            sequence="3"
         />
     </data>
 </odoo>

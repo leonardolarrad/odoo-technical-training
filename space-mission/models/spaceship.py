@@ -1,62 +1,77 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError, UserError
 
 class Spaceship(models.Model):
     _name = 'space_mission.spaceship'
     _description = 'Spaceship to go to the moon and back'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char(string="Nombre", required=True)
-    description = fields.Text(string="Descripción")
+    name = fields.Char(
+        string="Name", 
+        required=True,
+        tracking=True
+    )
+    description = fields.Text(
+        string="Description",
+        tracking=True
+    )
         
     crew_size = fields.Selection([
-        ('small', 'Pequeño'),
-        ('medium', 'Mediano'),
-        ('large', 'Grande'),
-    ],  string="Capacidad de tripulación", 
+        ('small', 'Small'),
+        ('medium', 'Medium'),
+        ('large', 'Large'),
+    ],  string="Crew Size", 
         copy=False, 
-        default='small'
+        default='small',
+        tracking=True
     )
     
     crew_capacity = fields.Integer(
-        string="Tamaño del equipo", 
-        default=0
+        string="Crew Capacity",", 
+        default=0,
+        tracking=True
     )
 
     fuel = fields.Char(
-        string="Combustible", 
-        default='Plutonio-238'
+        string="Fuel", 
+        default='Plutonium-238',
+        tracking=True
     )
 
     fuel_capacity = fields.Integer(
-        string="Capacidad de combustible", 
-        default=0
+        string="Fuel Capacity", 
+        default=0,
+        tracking=True
     )
 
     width = fields.Float(
-        string="Ancho",
-        default=0.00
+        string="Width",
+        default=0.00,
+        tracking=True
     )
 
     height = fields.Float(
-        string="Alto",
-        default=0.00
+        string="Height",
+        default=0.00,
+        tracking=True
     )
 
     mission_ids = fields.One2many(
         comodel_name='space_mission.mission',
         inverse_name='spaceship_id',
-        string="Misiones"
+        string="Missions",
+        tracking=True
     )
 
     @api.constrains('width', 'height')
     def _check_dimensions(self):
         for record in self:
             if record.width < 0 or record.height < 0:
-                raise ValidationError("Las dimensiones (ancho) y (alto) no pueden ser negativas")
+                raise ValidationError(_("Dimensions (width & height) cannot be negative"))
 
             if record.width > record.height:
-                raise UserError("El ancho no puede ser mayor que el alto")
+                raise UserError(_("Width cannot be greater than height"))
 
-    active = fields.Boolean(string='Activa', default=True)
+    active = fields.Boolean(string='Active', default=True)

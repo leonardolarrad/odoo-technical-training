@@ -4,31 +4,74 @@
 
         <record id="atlantis" model="space_mission.spaceship">
             <field name="name">Atlantis</field>
-            <field name="description">Atlantis es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Atlantis es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.</field>
+            <field name="description">Atlantis was the fourth and final Space Shuttle orbiter to be built by NASA. It was the first Space Shuttle to be launched into orbit, on 3 April 1981, and the last to be retired, on 21 July 2011. Atlantis was the first Space Shuttle to be used for the construction of the International Space Station, and the first to be used for the Hubble Space Telescope servicing mission. It was also the first Space Shuttle to be used for a rescue mission, when it was used to rescue the crew of the Space Shuttle Challenger in 1986.</field>
             <field name="crew_size">small</field>
             <field name="crew_capacity">2</field>
-            <field name="fuel">Plutonio-238</field>
+            <field name="fuel">Plutonium-238</field>
             <field name="fuel_capacity">2230000</field>
         </record>
 
         <record id="discovery" model="space_mission.spaceship">
             <field name="name">Discovery</field>
-            <field name="description">Discovery es una nave espacial de la NASA, utilizada para el programa de vuelos de la Estación Espacial Internacional (ISS). Fue la primera nave espacial estadounidense en ser lanzada desde la Estación Espacial Internacional, en 2008. Discovery es la última nave espacial de la NASA en ser lanzada al espacio, en 2011.</field>
+            <field name="description">Discovery was the second Space Shuttle orbiter to be built by NASA. It was the first Space Shuttle to be launched into orbit, on 30 April 1984, and the last to be retired, on 9 September 2011. Discovery was the first Space Shuttle to be used for the construction of the International Space Station, and the first to be used for the Hubble Space Telescope servicing mission. It was also the first Space Shuttle to be used for a rescue mission, when it was used to rescue the crew of the Space Shuttle Challenger in 1986.</field>
             <field name="crew_size">large</field>
             <field name="crew_capacity">7</field>
-            <field name="fuel">Plutonio-239</field>
+            <field name="fuel">Plutonium-239</field>
             <field name="fuel_capacity">1950000</field>
         </record>
 
         <record id="radiant_crypto" model="space_mission.spaceship">
             <field name="name">Radiant Crypto</field>
-            <field name="description">Nave espacial de CryptoBros y ToyoBobos para el programa 'Crypto Mining', que consiste en minar criptomonedas en el espacio y perder una cantidad astronica de plata.
-            </field>
+            <field name="description">CryptoBros and ToyoBobos spaceship for the 'Crypto Mining' program, which consists of mining cryptocurrencies in space and losing an astronomical amount of money.</field>
             <field name="crew_size">large</field>
             <field name="crew_capacity">6</field>
-            <field name="fuel">Estrella negra</field>
+            <field name="fuel">Dark starts</field>
             <field name="fuel_capacity">100</field>
         </record>
 
+        <record id="turbo_pascal" model="space_mission.spaceship">
+            <field name="name">Turbo Pascal</field>
+            <field name="description">Turbo Pascal was a compiler for the Pascal programming language, developed by Borland International in 1983. It was the first compiler for Pascal to be widely used, and was the first compiler to be widely available for the IBM PC. It was also the first compiler to be widely available for the Apple Macintosh. Turbo Pascal was the first compiler to be widely available for the IBM PC. It was also the first compiler to be widely available for the Apple Macintosh.</field>
+            <field name="crew_size">small</field>
+            <field name="crew_capacity">2</field>
+            <field name="fuel">Dark starts</field>
+            <field name="fuel_capacity">100</field>
+        </record>
+
+        <record id="minerva_7" model="space_mission.spaceship">
+            <field name="name">Minerva 7</field>
+            <field name="description">Minerva 7 was a Soviet space mission that launched on 12 July 1969. It was the first manned spaceflight to land on the Moon, and the first to return to Earth with lunar samples. The mission was the first of three Soviet lunar missions, and the first of three Soviet missions to land on the Moon. The mission was the first of three Soviet lunar missions, and the first of three Soviet missions to land on the Moon.</field>
+            <field name="crew_size">small</field>
+            <field name="crew_capacity">2</field>
+            <field name="fuel">Plutonium-238</field>
+            <field name="fuel_capacity">2230000</field>
+        </record>
+
+        <record id="apollo_11" model="space_mission.spaceship">
+            <field name="name">Apollo 11</field>
+            <field name="description">Apollo 11 was the spaceflight that landed the first two humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin, both American, landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC. Armstrong became the first person to step onto the lunar surface six hours and 39 minutes later on July 21 at 02:56 UTC; Aldrin joined him 19 minutes later. They spent about two and a quarter hours together outside the spacecraft, and they collected 47.5 pounds (21.5 kg) of lunar material to bring back to Earth. Command module pilot Michael Collins flew the command module Columbia alone in lunar orbit while they were on the Moon's surface. Armstrong and Aldrin spent 21 hours, 36 minutes on the lunar surface at a site they named Tranquility Base before lifting off to rejoin Columbia in lunar orbit.</field>
+            <field name="crew_size">large</field>
+            <field name="crew_capacity">7</field>
+            <field name="fuel">Plutonium-238</field>
+            <field name="fuel_capacity">2230000</field>
+        </record>
+
+        <record id="apollo_13" model="space_mission.spaceship">
+            <field name="name">Apollo 13</field>
+            <field name="description">Apollo 13 was the seventh manned mission in the American Apollo space program and the third intended to land on the Moon. The craft was launched on April 11, 1970, at 13:13 UTC, but the lunar landing was aborted after an oxygen tank exploded two days later. The crew returned to Earth safely on April 17, 1970, after the lunar module had been jettisoned. The astronauts—Commander James A. Lovell Jr., Command Module Pilot John L. Swigert Jr., and Lunar Module Pilot Fred W. Haise Jr.—were rescued by the USS Iwo Jima. The mission crew had a combined total of 566 hours, 31 minutes and 30 seconds of spaceflight time.</field>
+            <field name="crew_size">large</field>
+            <field name="crew_capacity">7</field>
+            <field name="fuel">Plutonium-238</field>
+            <field name="fuel_capacity">2230000</field>
+        </record>
+
+        <record id="horizon" model="space_mission.spaceship">
+            <field name="name">Horizon</field>
+            <field name="description">Horizon was the third Space Shuttle orbiter to be built by NASA. It was the first Space Shuttle to be launched into orbit, on 8 September 1983, and the last to be retired, on 8 July 2011. Horizon was the first Space Shuttle to be used for the construction of the International Space Station, and the first to be used for the Hubble Space Telescope servicing mission. It was also the first Space Shuttle to be used for a rescue mission, when it was used to rescue the crew of the Space Shuttle Challenger in 1986.</field>
+            <field name="crew_size">large</field>
+            <field name="crew_capacity">7</field>
+            <field name="fuel">Plutonium-238</field>
+            <field name="fuel_capacity">2230000</field>
+        </record>
     </data>
 </odoo>
