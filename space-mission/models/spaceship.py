@@ -29,7 +29,7 @@ class Spaceship(models.Model):
     )
     
     crew_capacity = fields.Integer(
-        string="Crew Capacity",", 
+        string="Crew Capacity",
         default=0,
         tracking=True
     )
