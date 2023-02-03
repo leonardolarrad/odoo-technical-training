@@ -25,6 +25,8 @@
         'wizard/sale_wizard_view.xml',
         # reports
         'reports/session_report_template.xml',
+        # web templates
+        'view/academy_web_templates.xml',
     ],
     'demo': [
         'demo/academy_demo.xml'
