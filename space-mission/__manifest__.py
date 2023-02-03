@@ -9,7 +9,7 @@
     'website': 'https://www.dimac21.com',
     'author': 'Soluciones DIMAC21',
     'license': 'LGPL-3',
-    'depends': ['mail'],
+    'depends': ['base'],
     'data': [        
         # security
         'security/space_mission_security.xml',
