@@ -27,7 +27,7 @@
             id="menu_space_mission" 
             name="Space Mission"
             sequence="1"
-            web_icon="space_mission,static/description/icon.png"
+            web_icon="space-mission,static/description/icon.png"
         />
 
         <menuitem 
