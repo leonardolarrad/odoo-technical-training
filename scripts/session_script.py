@@ -52,3 +52,5 @@ new_session = models.execute_kw(
         'start_date': '2020-01-01',
         'end_date': '2020-01-02',
     }])
+
+print('new session:', new_session)
